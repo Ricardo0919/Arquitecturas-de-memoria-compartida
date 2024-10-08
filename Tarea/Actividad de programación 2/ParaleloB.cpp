@@ -48,12 +48,13 @@ bool isPrime(int num) {
 }
 
 void sumPrimes(Block &block) {
-    block.sum = 0; 
+    double aux = 0:
     for (int i = block.start; i <= block.end; i++) {
         if (isPrime(i)) {
-            block.sum += i;
+            aux += i;
         }
     }
+    block.sum = aux; 
 }
 
 int main(int argc, char* argv[]) {

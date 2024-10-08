@@ -29,12 +29,13 @@ typedef struct {
 } Block;
 
 void countEven(Block &block){
-    block.count = 0;
+    int aux = 0;
     for(int i = block.start; i<block.end; i++){
         if( block.array[i]%2 == 0){
-            block.count += 1;
+            aux += 1;
         }
     }
+    block.count = aux;
 }
 
 int main(int argc, char* argv[]) {

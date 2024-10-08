@@ -22,7 +22,7 @@
 using namespace std;
 using namespace std::chrono;
 
-const int SIZE = 10000000; // 1e7
+const int SIZE = 1000000; // 1e6
 
 __global__ void add_vector(int *c, int *a, int *b) {
     //Threads
